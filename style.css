@@ -54,16 +54,17 @@ body {
 
 }
 
+
+
 .nice-button {
   display: flex;
   align-items: center;
   height: 100%;
   justify-content: center;
-  transition-property: border;
-  transition-duration: 1s;
+  
 }
 
-.search {
+.search-contener {
   background-color: white;
   border-radius: 5px;
   border: 5px solid white;
@@ -76,16 +77,15 @@ body {
   justify-content: flex-start;
   padding: 5px;
 }
-.search p::before{
-  content: url(file:///Users/maksiuchojnacki/Desktop/masno/assets/lupisko.png) ;
-}
+
 
 .search-icon {
   margin: 0 12px;
-
+ 
 }
 
-.search-engine {
+
+.search-input {
   width: 350px;
   height: 30px;
   box-sizing: border-box;
@@ -93,4 +93,23 @@ body {
   border-width: 0px;
   outline-style: none;
 
+}
+.search-input:focus~.search-contener{
+border-color: orange;
+}
+.email-styles:hover{
+color: orange;
+transform: scale(1.2);
+}
+.email-styles{
+  transition-duration: 0.6s;
+
+}
+.icon-styles:hover{
+transform: scale(1.2);
+transition: 0.6s transform linear;
+
+}
+.icon-styles{
+  
 }
